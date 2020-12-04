@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondReusableView" customModule="TestReusableViews" customModuleProvider="target">
+            <connections>
+                <outlet property="centeredView" destination="xBc-2m-FEf" id="7B0-Bb-c4h"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="463" height="238"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBc-2m-FEf">
+                    <rect key="frame" x="201.5" y="64" width="60" height="60"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="GPA-lt-0ru"/>
+                        <constraint firstAttribute="width" constant="60" id="IeT-RH-fxY"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rs-jf-74S">
+                    <rect key="frame" x="20" y="144" width="423" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="qm2-Sz-k9Q"/>
+                    </constraints>
+                    <state key="normal" title="Show/Hide"/>
+                    <connections>
+                        <action selector="didTapButton:" destination="-1" eventType="touchUpInside" id="Oke-Yh-bH0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1Rs-jf-74S" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="EEd-fD-nbc"/>
+                <constraint firstItem="xBc-2m-FEf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LhV-cd-Spr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1Rs-jf-74S" secondAttribute="trailing" constant="20" id="NnT-Gl-g9r"/>
+                <constraint firstItem="1Rs-jf-74S" firstAttribute="top" secondItem="xBc-2m-FEf" secondAttribute="bottom" constant="20" id="Nys-OY-km7"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1Rs-jf-74S" secondAttribute="bottom" constant="19" id="dRy-hH-aBv"/>
+                <constraint firstItem="xBc-2m-FEf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="ynY-wh-VuE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="167.39130434782609" y="-66.964285714285708"/>
+        </view>
+    </objects>
+</document>
